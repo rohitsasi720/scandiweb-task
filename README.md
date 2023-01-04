@@ -1,4 +1,4 @@
-## Scandiweb Junior Developer Test
+# Scandiweb Junior Developer Test
 
 CRUD e-commerce website
 
@@ -12,7 +12,7 @@ URL : https://rohitscandiweb.000webhostapp.com/
 
 ## Setup
 
-# Build using docker compose : 
+### Build using docker compose : 
 * Make sure you have docker desktop and docker compose already installed.
  If you dont have docker compose installed follow this documentation : https://docs.docker.com/compose/install/ 
 * Run the command 
@@ -22,7 +22,7 @@ docker-compose up -d
 * Open ``localhost:8000`` to access the website and ``localhost:8001`` to access phpmyadmin panel
 
 
-# Building on local machine :
+### Building on local machine :
 * Open terminal 
 * Run ``cd /xampp/htdocs/folder-name``
 * Git clone
