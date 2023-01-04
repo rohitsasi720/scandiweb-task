@@ -1,0 +1,38 @@
+version: "3.7"
+
+services:
+  app:
+    build: ./docker
+    image: rohitsasi/php_mvc
+    ports:
+      - "8080:80"
+    volumes:
+      # Mount source-code for development
+      - ./:/var/www
+  db:
+    image: mysql:8
+    container_name: db
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker/mysql-config.cnf:/etc/mysql/conf.d/config.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: php_mvc
+      MYSQL_USER: php_mvc
+      MYSQL_PASSWORD: php_mvc
+  
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+      - PMA_USER=php_mvc
+      - PMA_PASSWORD=php_mvc
+
+volumes:
+  mysql-data:

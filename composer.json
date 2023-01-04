@@ -1,0 +1,15 @@
+{
+    "name": "hp/scandiweb-test",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "rohitsasi720",
+            "email": "rohitsasi720@gmail.com"
+        }
+    ],
+    "require": {}
+}

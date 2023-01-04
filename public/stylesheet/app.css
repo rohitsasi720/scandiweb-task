@@ -1,0 +1,22 @@
+body {
+    font-family: 'Serif', serif !important;
+    background-color: #0A2647 !important;
+    color: #ADD8E6 !important;
+  }
+  
+  .navbar {
+    font-family: 'Serif', serif;
+    background: #144272 !important;
+    color: #ADD8E6 !important;
+  }
+  
+  .container.p-5 {
+    padding: 4rem 0;
+  }
+  
+  .footer {
+    position: relative !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
